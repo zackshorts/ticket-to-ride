@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
+    compile project(path: ':server')
+    implementation project(':server')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

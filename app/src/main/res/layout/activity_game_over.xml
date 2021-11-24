@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_fireworks"
+    tools:context=".GameOverActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="184dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Game Over"
+            android:textColor="#fff"
+            android:textSize="70dp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:layout_weight="0.2"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/winner_color_top"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+            <TextView
+                android:id="@+id/winner_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="No Player" />
+
+            <TextView
+                android:id="@+id/winner_score_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Score: " />
+
+            <TextView
+                android:id="@+id/winner_gained_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points from destination cards: " />
+
+            <TextView
+                android:id="@+id/winner_lost_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points Lost from destination cards: " />
+
+            <TextView
+                android:id="@+id/winner_longest_path_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:alpha="0"
+                android:gravity="center_horizontal"
+                android:text="** Longest Route **" />
+
+            <ImageView
+                android:id="@+id/winner_color_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="290dp"
+            android:layout_weight="0.2"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/p2_color_top"
+                android:layout_width="350dp"
+                android:layout_height="20dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+            <TextView
+                android:id="@+id/p2_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="No Player" />
+
+            <TextView
+                android:id="@+id/p2_score_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Score: " />
+
+            <TextView
+                android:id="@+id/p2_gained_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points from destination cards: " />
+
+            <TextView
+                android:id="@+id/p2_lost_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points Lost from destination cards: " />
+
+            <TextView
+                android:id="@+id/p2_longest_path_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:alpha="0"
+                android:gravity="center_horizontal"
+                android:text="** Longest Route **" />
+
+            <ImageView
+                android:id="@+id/p2_color_bottom"
+                android:layout_width="350dp"
+                android:layout_height="10dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="290dp"
+            android:layout_marginRight="120dp"
+            android:layout_weight="0.2"
+            android:background="#fff"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/p3_color_top"
+                android:layout_width="350dp"
+                android:layout_height="20dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+            <TextView
+                android:id="@+id/p3_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="No Player" />
+
+            <TextView
+                android:id="@+id/p3_score_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Score: " />
+
+            <TextView
+                android:id="@+id/p3_gained_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points from destination cards: " />
+
+            <TextView
+                android:id="@+id/p3_lost_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points Lost from destination cards: " />
+
+            <TextView
+                android:id="@+id/p3_longest_path_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:alpha="0"
+                android:gravity="center_horizontal"
+                android:text="** Longest Route **" />
+
+            <ImageView
+                android:id="@+id/p3_color_bottom"
+                android:layout_width="350dp"
+                android:layout_height="10dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="430dp"
+            android:layout_weight="0.2"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/p4_color_top"
+                android:layout_width="350dp"
+                android:layout_height="20dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+            <TextView
+                android:id="@+id/p4_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="No Player" />
+
+            <TextView
+                android:id="@+id/p4_score_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Score: " />
+
+            <TextView
+                android:id="@+id/p4_gained_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points from destination cards: " />
+
+            <TextView
+                android:id="@+id/p4_lost_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points Lost from destination cards: " />
+
+            <TextView
+                android:id="@+id/p4_longest_path_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:alpha="0"
+                android:gravity="center_horizontal"
+                android:text="** Longest Route **" />
+
+            <ImageView
+                android:id="@+id/p4_color_bottom"
+                android:layout_width="350dp"
+                android:layout_height="10dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="430dp"
+            android:layout_marginRight="200dp"
+            android:layout_weight="0.2"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/p5_color_top"
+                android:layout_width="350dp"
+                android:layout_height="20dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+            <TextView
+                android:id="@+id/p5_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="No Player" />
+
+            <TextView
+                android:id="@+id/p5_score_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Score: " />
+
+            <TextView
+                android:id="@+id/p5_gained_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points from destination cards: " />
+
+            <TextView
+                android:id="@+id/p5_lost_destination_cards_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_horizontal"
+                android:text="Points Lost from destination cards: " />
+
+            <TextView
+                android:id="@+id/p5_longest_path_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:alpha="0"
+                android:gravity="center_horizontal"
+                android:text="** Longest Route **" />
+
+            <ImageView
+                android:id="@+id/p5_color_bottom"
+                android:layout_width="350dp"
+                android:layout_height="10dp"
+                android:scaleType="center"
+                android:background="@drawable/white_background" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/back_to_game_lobby_btn"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="452dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0.2"
+            android:textAllCaps="false"
+            android:background="@drawable/white_background"
+            android:text="back to game lobby"
+             />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
